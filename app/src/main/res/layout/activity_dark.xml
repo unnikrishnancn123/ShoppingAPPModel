@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.Dark">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:title="Shopping App" />
+    <TextView
+        android:id="@+id/appearance"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:text="       App Theme Appearance"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/appearancetab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="75dp"
+        tools:ignore="InvalidId">
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="317dp"
+            android:layout_height="232dp"
+            android:checkedButton="@+id/day_mode"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/system_default"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:text="System default" />
+
+            <RadioButton
+                android:id="@+id/day_mode"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:text="Day mode" />
+
+            <RadioButton
+                android:id="@+id/night_mode"
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:text="Night mode" />
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

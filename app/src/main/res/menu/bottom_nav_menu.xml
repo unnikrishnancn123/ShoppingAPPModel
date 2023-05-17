@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home_foreground"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menu_categories"
+        android:icon="@drawable/categories_foreground"
+        android:title="Categories" />
+
+    <item
+        android:id="@+id/menu_cart"
+        android:icon="@drawable/cart_foreground"
+        android:title="Cart" />
+
+    <item
+        android:id="@+id/menu_account"
+        android:icon="@drawable/person_foreground"
+        android:title="Account" />
+
+</menu>
